@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="Departamentos\FrmDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="Departamentos\FrmDepartamento.Designer.cs">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\ListaDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\ListaDepartamentos.Designer.cs">
+      <DependentUpon>ListaDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="Departamentos\FrmDepartamento.resx">
+      <DependentUpon>FrmDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\ListaDepartamentos.resx">
+      <DependentUpon>ListaDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
