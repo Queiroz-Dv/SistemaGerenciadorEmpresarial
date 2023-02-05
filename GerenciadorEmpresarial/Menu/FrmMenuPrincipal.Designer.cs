@@ -134,7 +134,9 @@ namespace GerenciadorEmpresarial.Menu
             this.Controls.Add(this.btnTarefas);
             this.Controls.Add(this.btnColaborador);
             this.Name = "FrmMenuPrincipal";
-            this.Text = "FrmMenuPrincipal";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu Principal";
             this.ResumeLayout(false);
 
         }

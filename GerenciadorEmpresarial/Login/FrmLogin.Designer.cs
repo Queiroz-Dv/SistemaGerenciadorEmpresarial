@@ -105,6 +105,8 @@ namespace GerenciadorEmpresarial
             this.Controls.Add(this.txtNumeroUsuario);
             this.Controls.Add(this.lblNumeroUsuario);
             this.Name = "FrmLogin";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

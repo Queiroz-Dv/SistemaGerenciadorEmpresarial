@@ -46,17 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cargos\FrmCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargos\FrmCargos.Designer.cs">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargos\FrmControleDeCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargos\FrmControleDeCargos.Designer.cs">
+      <DependentUpon>FrmControleDeCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\FrmControleDeDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\FrmControleDeDepartamentos.Designer.cs">
+      <DependentUpon>FrmControleDeDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Departamentos\FrmDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Departamentos\FrmDepartamento.Designer.cs">
       <DependentUpon>FrmDepartamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Departamentos\ListaDepartamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Departamentos\ListaDepartamentos.Designer.cs">
-      <DependentUpon>ListaDepartamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -72,11 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cargos\FrmCargos.resx">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargos\FrmControleDeCargos.resx">
+      <DependentUpon>FrmControleDeCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\FrmControleDeDepartamentos.resx">
+      <DependentUpon>FrmControleDeDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Departamentos\FrmDepartamento.resx">
       <DependentUpon>FrmDepartamento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Departamentos\ListaDepartamentos.resx">
-      <DependentUpon>ListaDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -115,6 +133,9 @@
       <Project>{3d1d5929-dec7-4c27-a173-347f8bdd596d}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Colaboradores\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
