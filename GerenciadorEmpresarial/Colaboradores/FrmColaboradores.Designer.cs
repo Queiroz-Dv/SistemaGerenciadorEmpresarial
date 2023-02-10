@@ -53,7 +53,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.chkAdmin = new System.Windows.Forms.CheckBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnVerifica = new System.Windows.Forms.Button();
-            this.txtUserNo = new System.Windows.Forms.TextBox();
+            this.txtNumeroUsuario = new System.Windows.Forms.TextBox();
             this.pnlDadosPrincipais = new System.Windows.Forms.Panel();
             this.pnlUsuario = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -310,14 +310,14 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnVerifica.Text = "Verifica";
             this.btnVerifica.UseVisualStyleBackColor = false;
             // 
-            // txtUserNo
+            // txtNumeroUsuario
             // 
-            this.txtUserNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserNo.Location = new System.Drawing.Point(139, 22);
-            this.txtUserNo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUserNo.Name = "txtUserNo";
-            this.txtUserNo.Size = new System.Drawing.Size(172, 26);
-            this.txtUserNo.TabIndex = 0;
+            this.txtNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroUsuario.Location = new System.Drawing.Point(139, 22);
+            this.txtNumeroUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumeroUsuario.Name = "txtNumeroUsuario";
+            this.txtNumeroUsuario.Size = new System.Drawing.Size(172, 26);
+            this.txtNumeroUsuario.TabIndex = 0;
             // 
             // pnlDadosPrincipais
             // 
@@ -354,7 +354,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.pnlUsuario.Controls.Add(this.chkAdmin);
             this.pnlUsuario.Controls.Add(this.txtPassword);
             this.pnlUsuario.Controls.Add(this.btnVerifica);
-            this.pnlUsuario.Controls.Add(this.txtUserNo);
+            this.pnlUsuario.Controls.Add(this.txtNumeroUsuario);
             this.pnlUsuario.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlUsuario.Location = new System.Drawing.Point(0, 0);
             this.pnlUsuario.Margin = new System.Windows.Forms.Padding(2);
@@ -429,7 +429,7 @@ namespace GerenciadorEmpresarial.Colaboradores
         private System.Windows.Forms.CheckBox chkAdmin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnVerifica;
-        private System.Windows.Forms.TextBox txtUserNo;
+        private System.Windows.Forms.TextBox txtNumeroUsuario;
         private System.Windows.Forms.Panel pnlDadosPrincipais;
         private System.Windows.Forms.Panel pnlUsuario;
         private System.Windows.Forms.Label label9;
