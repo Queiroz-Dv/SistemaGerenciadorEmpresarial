@@ -39,26 +39,26 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.lblNome = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.dtpAniversario = new System.Windows.Forms.DateTimePicker();
-            this.cmbPosition = new System.Windows.Forms.ComboBox();
-            this.cmbDeparment = new System.Windows.Forms.ComboBox();
-            this.txtSalary = new System.Windows.Forms.TextBox();
+            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
             this.btnCaminhoImagem = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtImagePath = new System.Windows.Forms.TextBox();
-            this.txtSurname = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.ptbImagem = new System.Windows.Forms.PictureBox();
+            this.txtCaminhoImagem = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.pnlCrud = new System.Windows.Forms.Panel();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.chkAdmin = new System.Windows.Forms.CheckBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnVerifica = new System.Windows.Forms.Button();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.btnVerificar = new System.Windows.Forms.Button();
             this.txtNumeroUsuario = new System.Windows.Forms.TextBox();
             this.pnlDadosPrincipais = new System.Windows.Forms.Panel();
             this.pnlUsuario = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             this.pnlCrud.SuspendLayout();
             this.pnlDadosPrincipais.SuspendLayout();
             this.pnlUsuario.SuspendLayout();
@@ -163,38 +163,38 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.dtpAniversario.Size = new System.Drawing.Size(159, 20);
             this.dtpAniversario.TabIndex = 39;
             // 
-            // cmbPosition
+            // cmbDepartamento
             // 
-            this.cmbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Location = new System.Drawing.Point(176, 201);
-            this.cmbPosition.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbPosition.Name = "cmbPosition";
-            this.cmbPosition.Size = new System.Drawing.Size(159, 28);
-            this.cmbPosition.TabIndex = 38;
+            this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartamento.FormattingEnabled = true;
+            this.cmbDepartamento.Location = new System.Drawing.Point(176, 201);
+            this.cmbDepartamento.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbDepartamento.Name = "cmbDepartamento";
+            this.cmbDepartamento.Size = new System.Drawing.Size(159, 28);
+            this.cmbDepartamento.TabIndex = 38;
             // 
-            // cmbDeparment
+            // cmbCargo
             // 
-            this.cmbDeparment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDeparment.FormattingEnabled = true;
-            this.cmbDeparment.Location = new System.Drawing.Point(176, 159);
-            this.cmbDeparment.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbDeparment.Name = "cmbDeparment";
-            this.cmbDeparment.Size = new System.Drawing.Size(159, 28);
-            this.cmbDeparment.TabIndex = 37;
+            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Location = new System.Drawing.Point(176, 159);
+            this.cmbCargo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(159, 28);
+            this.cmbCargo.TabIndex = 37;
             // 
-            // txtSalary
+            // txtSalario
             // 
-            this.txtSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalary.Location = new System.Drawing.Point(176, 126);
-            this.txtSalary.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(159, 26);
-            this.txtSalary.TabIndex = 36;
+            this.txtSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalario.Location = new System.Drawing.Point(176, 126);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(159, 26);
+            this.txtSalario.TabIndex = 36;
             // 
             // btnCaminhoImagem
             // 
-            this.btnCaminhoImagem.BackColor = System.Drawing.Color.White;
+            this.btnCaminhoImagem.BackColor = System.Drawing.SystemColors.Control;
             this.btnCaminhoImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaminhoImagem.Location = new System.Drawing.Point(366, 93);
             this.btnCaminhoImagem.Margin = new System.Windows.Forms.Padding(2);
@@ -204,42 +204,42 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnCaminhoImagem.Text = "Adicionar imagem";
             this.btnCaminhoImagem.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // ptbImagem
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(476, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 187);
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
+            this.ptbImagem.BackColor = System.Drawing.Color.Transparent;
+            this.ptbImagem.Location = new System.Drawing.Point(476, 4);
+            this.ptbImagem.Margin = new System.Windows.Forms.Padding(2);
+            this.ptbImagem.Name = "ptbImagem";
+            this.ptbImagem.Size = new System.Drawing.Size(159, 187);
+            this.ptbImagem.TabIndex = 41;
+            this.ptbImagem.TabStop = false;
             // 
-            // txtImagePath
+            // txtCaminhoImagem
             // 
-            this.txtImagePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImagePath.Location = new System.Drawing.Point(176, 90);
-            this.txtImagePath.Margin = new System.Windows.Forms.Padding(2);
-            this.txtImagePath.Name = "txtImagePath";
-            this.txtImagePath.Size = new System.Drawing.Size(159, 26);
-            this.txtImagePath.TabIndex = 34;
+            this.txtCaminhoImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCaminhoImagem.Location = new System.Drawing.Point(176, 90);
+            this.txtCaminhoImagem.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCaminhoImagem.Name = "txtCaminhoImagem";
+            this.txtCaminhoImagem.Size = new System.Drawing.Size(159, 26);
+            this.txtCaminhoImagem.TabIndex = 34;
             // 
-            // txtSurname
+            // txtSobrenome
             // 
-            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSurname.Location = new System.Drawing.Point(176, 55);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(159, 26);
-            this.txtSurname.TabIndex = 33;
+            this.txtSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSobrenome.Location = new System.Drawing.Point(176, 55);
+            this.txtSobrenome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(159, 26);
+            this.txtSobrenome.TabIndex = 33;
             // 
-            // txtName
+            // txtNome
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(176, 21);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(159, 26);
-            this.txtName.TabIndex = 32;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(176, 21);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(159, 26);
+            this.txtNome.TabIndex = 32;
             // 
             // pnlCrud
             // 
@@ -254,7 +254,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             // 
             // btnGravar
             // 
-            this.btnGravar.BackColor = System.Drawing.Color.White;
+            this.btnGravar.BackColor = System.Drawing.SystemColors.Control;
             this.btnGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGravar.Location = new System.Drawing.Point(231, 18);
             this.btnGravar.Margin = new System.Windows.Forms.Padding(2);
@@ -266,7 +266,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.BackColor = System.Drawing.SystemColors.Control;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(366, 18);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
@@ -289,26 +289,26 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.chkAdmin.Text = "Usuário Admin?";
             this.chkAdmin.UseVisualStyleBackColor = true;
             // 
-            // txtPassword
+            // txtSenha
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(139, 59);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(172, 26);
-            this.txtPassword.TabIndex = 2;
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(139, 59);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(172, 26);
+            this.txtSenha.TabIndex = 2;
             // 
-            // btnVerifica
+            // btnVerificar
             // 
-            this.btnVerifica.BackColor = System.Drawing.Color.White;
-            this.btnVerifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerifica.Location = new System.Drawing.Point(336, 22);
-            this.btnVerifica.Margin = new System.Windows.Forms.Padding(2);
-            this.btnVerifica.Name = "btnVerifica";
-            this.btnVerifica.Size = new System.Drawing.Size(89, 26);
-            this.btnVerifica.TabIndex = 1;
-            this.btnVerifica.Text = "Verifica";
-            this.btnVerifica.UseVisualStyleBackColor = false;
+            this.btnVerificar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnVerificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerificar.Location = new System.Drawing.Point(336, 22);
+            this.btnVerificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVerificar.Name = "btnVerificar";
+            this.btnVerificar.Size = new System.Drawing.Size(89, 26);
+            this.btnVerificar.TabIndex = 1;
+            this.btnVerificar.Text = "Verificar";
+            this.btnVerificar.UseVisualStyleBackColor = false;
             // 
             // txtNumeroUsuario
             // 
@@ -321,7 +321,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             // 
             // pnlDadosPrincipais
             // 
-            this.pnlDadosPrincipais.BackColor = System.Drawing.Color.White;
+            this.pnlDadosPrincipais.BackColor = System.Drawing.SystemColors.Control;
             this.pnlDadosPrincipais.Controls.Add(this.lblEndereco);
             this.pnlDadosPrincipais.Controls.Add(this.lblAniversario);
             this.pnlDadosPrincipais.Controls.Add(this.lblCargos);
@@ -332,14 +332,14 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.pnlDadosPrincipais.Controls.Add(this.lblNome);
             this.pnlDadosPrincipais.Controls.Add(this.txtEndereco);
             this.pnlDadosPrincipais.Controls.Add(this.dtpAniversario);
-            this.pnlDadosPrincipais.Controls.Add(this.cmbPosition);
-            this.pnlDadosPrincipais.Controls.Add(this.cmbDeparment);
-            this.pnlDadosPrincipais.Controls.Add(this.txtSalary);
+            this.pnlDadosPrincipais.Controls.Add(this.cmbDepartamento);
+            this.pnlDadosPrincipais.Controls.Add(this.cmbCargo);
+            this.pnlDadosPrincipais.Controls.Add(this.txtSalario);
             this.pnlDadosPrincipais.Controls.Add(this.btnCaminhoImagem);
-            this.pnlDadosPrincipais.Controls.Add(this.pictureBox1);
-            this.pnlDadosPrincipais.Controls.Add(this.txtImagePath);
-            this.pnlDadosPrincipais.Controls.Add(this.txtSurname);
-            this.pnlDadosPrincipais.Controls.Add(this.txtName);
+            this.pnlDadosPrincipais.Controls.Add(this.ptbImagem);
+            this.pnlDadosPrincipais.Controls.Add(this.txtCaminhoImagem);
+            this.pnlDadosPrincipais.Controls.Add(this.txtSobrenome);
+            this.pnlDadosPrincipais.Controls.Add(this.txtNome);
             this.pnlDadosPrincipais.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDadosPrincipais.Location = new System.Drawing.Point(0, 104);
             this.pnlDadosPrincipais.Name = "pnlDadosPrincipais";
@@ -352,8 +352,8 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.pnlUsuario.Controls.Add(this.label9);
             this.pnlUsuario.Controls.Add(this.label10);
             this.pnlUsuario.Controls.Add(this.chkAdmin);
-            this.pnlUsuario.Controls.Add(this.txtPassword);
-            this.pnlUsuario.Controls.Add(this.btnVerifica);
+            this.pnlUsuario.Controls.Add(this.txtSenha);
+            this.pnlUsuario.Controls.Add(this.btnVerificar);
             this.pnlUsuario.Controls.Add(this.txtNumeroUsuario);
             this.pnlUsuario.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlUsuario.Location = new System.Drawing.Point(0, 0);
@@ -393,7 +393,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.Name = "FrmColaboradores";
             this.ShowIcon = false;
             this.Text = "Colaboradores";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             this.pnlCrud.ResumeLayout(false);
             this.pnlDadosPrincipais.ResumeLayout(false);
             this.pnlDadosPrincipais.PerformLayout();
@@ -415,20 +415,20 @@ namespace GerenciadorEmpresarial.Colaboradores
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.DateTimePicker dtpAniversario;
-        private System.Windows.Forms.ComboBox cmbPosition;
-        private System.Windows.Forms.ComboBox cmbDeparment;
-        private System.Windows.Forms.TextBox txtSalary;
+        private System.Windows.Forms.ComboBox cmbDepartamento;
+        private System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.Button btnCaminhoImagem;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtImagePath;
-        private System.Windows.Forms.TextBox txtSurname;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.PictureBox ptbImagem;
+        private System.Windows.Forms.TextBox txtCaminhoImagem;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Panel pnlCrud;
         private System.Windows.Forms.Button btnGravar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.CheckBox chkAdmin;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnVerifica;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btnVerificar;
         private System.Windows.Forms.TextBox txtNumeroUsuario;
         private System.Windows.Forms.Panel pnlDadosPrincipais;
         private System.Windows.Forms.Panel pnlUsuario;

@@ -60,9 +60,11 @@ namespace GerenciadorEmpresarial.Cargos
             // 
             // txtCargo
             // 
+            this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCargo.Location = new System.Drawing.Point(234, 60);
+            this.txtCargo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(199, 20);
+            this.txtCargo.Size = new System.Drawing.Size(176, 26);
             this.txtCargo.TabIndex = 1;
             // 
             // lblCargo
@@ -87,10 +89,12 @@ namespace GerenciadorEmpresarial.Cargos
             // 
             // cmbDepartamentos
             // 
+            this.cmbDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDepartamentos.FormattingEnabled = true;
             this.cmbDepartamentos.Location = new System.Drawing.Point(234, 117);
+            this.cmbDepartamentos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDepartamentos.Name = "cmbDepartamentos";
-            this.cmbDepartamentos.Size = new System.Drawing.Size(199, 21);
+            this.cmbDepartamentos.Size = new System.Drawing.Size(176, 28);
             this.cmbDepartamentos.TabIndex = 13;
             // 
             // FrmCargos

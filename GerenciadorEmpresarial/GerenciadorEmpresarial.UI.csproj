@@ -108,11 +108,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salarios\FrmControleDeSalarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salarios\FrmControleDeSalarios.Designer.cs">
+      <DependentUpon>FrmControleDeSalarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Salarios\FrmSalarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Salarios\FrmSalarios.Designer.cs">
       <DependentUpon>FrmSalarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarefas\FrmControleDeTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarefas\FrmControleDeTarefas.Designer.cs">
+      <DependentUpon>FrmControleDeTarefas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarefas\FrmTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarefas\FrmTarefas.Designer.cs">
+      <DependentUpon>FrmTarefas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Cargos\FrmCargos.resx">
       <DependentUpon>FrmCargos.cs</DependentUpon>
@@ -153,8 +171,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Salarios\FrmControleDeSalarios.resx">
+      <DependentUpon>FrmControleDeSalarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Salarios\FrmSalarios.resx">
       <DependentUpon>FrmSalarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarefas\FrmControleDeTarefas.resx">
+      <DependentUpon>FrmControleDeTarefas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarefas\FrmTarefas.resx">
+      <DependentUpon>FrmTarefas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

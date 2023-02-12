@@ -37,38 +37,38 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnDeletar = new System.Windows.Forms.Button();
             this.pnlCrud = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.dpStart = new System.Windows.Forms.DateTimePicker();
+            this.dpInicio = new System.Windows.Forms.DateTimePicker();
             this.lblFinal = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.lblDataPermissao = new System.Windows.Forms.Label();
-            this.cmbPosition = new System.Windows.Forms.ComboBox();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.pnlForAdmin = new System.Windows.Forms.Panel();
-            this.cmbDepartment = new System.Windows.Forms.ComboBox();
+            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
             this.lblCargo = new System.Windows.Forms.Label();
             this.lblDepartamento = new System.Windows.Forms.Label();
-            this.txtSurname = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.txtNumeroUsuario = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblSobrenome = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblNumeroUsuario = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlPermissao = new System.Windows.Forms.Panel();
+            this.pnlPesquisaPermissao = new System.Windows.Forms.Panel();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.cmbState = new System.Windows.Forms.ComboBox();
+            this.cmbEstadosTarefa = new System.Windows.Forms.ComboBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtQuantidadeDias = new System.Windows.Forms.TextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblEstadoTarefas = new System.Windows.Forms.Label();
             this.lblQuantidadeDias = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbDataFinal = new System.Windows.Forms.RadioButton();
             this.rbDataInicial = new System.Windows.Forms.RadioButton();
-            this.dpEnd = new System.Windows.Forms.DateTimePicker();
+            this.dpFinal = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPermissoes)).BeginInit();
             this.pnlCrud.SuspendLayout();
             this.pnlForAdmin.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlPermissao.SuspendLayout();
+            this.pnlPesquisaPermissao.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +109,7 @@ namespace GerenciadorEmpresarial.Permissoes
             // btnGravar
             // 
             this.btnGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGravar.Location = new System.Drawing.Point(165, 26);
+            this.btnGravar.Location = new System.Drawing.Point(192, 30);
             this.btnGravar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(100, 38);
@@ -120,7 +120,7 @@ namespace GerenciadorEmpresarial.Permissoes
             // btnAtualizar
             // 
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(321, 26);
+            this.btnAtualizar.Location = new System.Drawing.Point(348, 30);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(100, 38);
@@ -131,7 +131,7 @@ namespace GerenciadorEmpresarial.Permissoes
             // btnDeletar
             // 
             this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletar.Location = new System.Drawing.Point(479, 26);
+            this.btnDeletar.Location = new System.Drawing.Point(506, 30);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(100, 38);
@@ -157,7 +157,7 @@ namespace GerenciadorEmpresarial.Permissoes
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(628, 26);
+            this.btnVoltar.Location = new System.Drawing.Point(655, 30);
             this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(100, 38);
@@ -165,15 +165,15 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // dpStart
+            // dpInicio
             // 
-            this.dpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpStart.Location = new System.Drawing.Point(125, 36);
-            this.dpStart.Margin = new System.Windows.Forms.Padding(2);
-            this.dpStart.Name = "dpStart";
-            this.dpStart.Size = new System.Drawing.Size(93, 23);
-            this.dpStart.TabIndex = 0;
+            this.dpInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpInicio.Location = new System.Drawing.Point(125, 36);
+            this.dpInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.dpInicio.Name = "dpInicio";
+            this.dpInicio.Size = new System.Drawing.Size(93, 23);
+            this.dpInicio.TabIndex = 0;
             // 
             // lblFinal
             // 
@@ -208,26 +208,26 @@ namespace GerenciadorEmpresarial.Permissoes
             this.lblDataPermissao.TabIndex = 16;
             this.lblDataPermissao.Text = "Data de Permissão";
             // 
-            // cmbPosition
+            // cmbCargo
             // 
-            this.cmbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Location = new System.Drawing.Point(129, 134);
-            this.cmbPosition.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbPosition.Name = "cmbPosition";
-            this.cmbPosition.Size = new System.Drawing.Size(210, 28);
-            this.cmbPosition.TabIndex = 4;
+            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Location = new System.Drawing.Point(163, 136);
+            this.cmbCargo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(210, 28);
+            this.cmbCargo.TabIndex = 4;
             // 
             // pnlForAdmin
             // 
-            this.pnlForAdmin.Controls.Add(this.cmbPosition);
-            this.pnlForAdmin.Controls.Add(this.cmbDepartment);
+            this.pnlForAdmin.Controls.Add(this.cmbCargo);
+            this.pnlForAdmin.Controls.Add(this.cmbDepartamento);
             this.pnlForAdmin.Controls.Add(this.lblCargo);
             this.pnlForAdmin.Controls.Add(this.lblDepartamento);
-            this.pnlForAdmin.Controls.Add(this.txtSurname);
-            this.pnlForAdmin.Controls.Add(this.txtName);
+            this.pnlForAdmin.Controls.Add(this.txtSobrenome);
+            this.pnlForAdmin.Controls.Add(this.txtNome);
             this.pnlForAdmin.Controls.Add(this.txtNumeroUsuario);
-            this.pnlForAdmin.Controls.Add(this.label3);
+            this.pnlForAdmin.Controls.Add(this.lblSobrenome);
             this.pnlForAdmin.Controls.Add(this.lblNome);
             this.pnlForAdmin.Controls.Add(this.lblNumeroUsuario);
             this.pnlForAdmin.Dock = System.Windows.Forms.DockStyle.Left;
@@ -237,21 +237,21 @@ namespace GerenciadorEmpresarial.Permissoes
             this.pnlForAdmin.Size = new System.Drawing.Size(402, 183);
             this.pnlForAdmin.TabIndex = 0;
             // 
-            // cmbDepartment
+            // cmbDepartamento
             // 
-            this.cmbDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartment.FormattingEnabled = true;
-            this.cmbDepartment.Location = new System.Drawing.Point(129, 99);
-            this.cmbDepartment.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbDepartment.Name = "cmbDepartment";
-            this.cmbDepartment.Size = new System.Drawing.Size(210, 28);
-            this.cmbDepartment.TabIndex = 3;
+            this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartamento.FormattingEnabled = true;
+            this.cmbDepartamento.Location = new System.Drawing.Point(163, 101);
+            this.cmbDepartamento.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbDepartamento.Name = "cmbDepartamento";
+            this.cmbDepartamento.Size = new System.Drawing.Size(210, 28);
+            this.cmbDepartamento.TabIndex = 3;
             // 
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(2, 133);
+            this.lblCargo.Location = new System.Drawing.Point(19, 141);
             this.lblCargo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(49, 18);
@@ -262,56 +262,56 @@ namespace GerenciadorEmpresarial.Permissoes
             // 
             this.lblDepartamento.AutoSize = true;
             this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartamento.Location = new System.Drawing.Point(2, 101);
+            this.lblDepartamento.Location = new System.Drawing.Point(19, 109);
             this.lblDepartamento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDepartamento.Name = "lblDepartamento";
             this.lblDepartamento.Size = new System.Drawing.Size(102, 18);
             this.lblDepartamento.TabIndex = 21;
             this.lblDepartamento.Text = "Departamento";
             // 
-            // txtSurname
+            // txtSobrenome
             // 
-            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSurname.Location = new System.Drawing.Point(129, 68);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(210, 26);
-            this.txtSurname.TabIndex = 2;
+            this.txtSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSobrenome.Location = new System.Drawing.Point(163, 70);
+            this.txtSobrenome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(210, 26);
+            this.txtSobrenome.TabIndex = 2;
             // 
-            // txtName
+            // txtNome
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(129, 35);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(210, 26);
-            this.txtName.TabIndex = 1;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(163, 37);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(210, 26);
+            this.txtNome.TabIndex = 1;
             // 
             // txtNumeroUsuario
             // 
             this.txtNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroUsuario.Location = new System.Drawing.Point(129, 4);
+            this.txtNumeroUsuario.Location = new System.Drawing.Point(163, 6);
             this.txtNumeroUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroUsuario.Name = "txtNumeroUsuario";
             this.txtNumeroUsuario.Size = new System.Drawing.Size(210, 26);
             this.txtNumeroUsuario.TabIndex = 0;
             // 
-            // label3
+            // lblSobrenome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(2, 71);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 18);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Sobrenome";
+            this.lblSobrenome.AutoSize = true;
+            this.lblSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSobrenome.Location = new System.Drawing.Point(19, 79);
+            this.lblSobrenome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSobrenome.Name = "lblSobrenome";
+            this.lblSobrenome.Size = new System.Drawing.Size(86, 18);
+            this.lblSobrenome.TabIndex = 17;
+            this.lblSobrenome.Text = "Sobrenome";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(2, 37);
+            this.lblNome.Location = new System.Drawing.Point(19, 45);
             this.lblNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(49, 18);
@@ -322,7 +322,7 @@ namespace GerenciadorEmpresarial.Permissoes
             // 
             this.lblNumeroUsuario.AutoSize = true;
             this.lblNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroUsuario.Location = new System.Drawing.Point(2, 6);
+            this.lblNumeroUsuario.Location = new System.Drawing.Point(19, 14);
             this.lblNumeroUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumeroUsuario.Name = "lblNumeroUsuario";
             this.lblNumeroUsuario.Size = new System.Drawing.Size(100, 18);
@@ -331,7 +331,7 @@ namespace GerenciadorEmpresarial.Permissoes
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pnlPermissao);
+            this.panel1.Controls.Add(this.pnlPesquisaPermissao);
             this.panel1.Controls.Add(this.pnlForAdmin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -340,26 +340,26 @@ namespace GerenciadorEmpresarial.Permissoes
             this.panel1.Size = new System.Drawing.Size(864, 183);
             this.panel1.TabIndex = 3;
             // 
-            // pnlPermissao
+            // pnlPesquisaPermissao
             // 
-            this.pnlPermissao.Controls.Add(this.btnLimpar);
-            this.pnlPermissao.Controls.Add(this.cmbState);
-            this.pnlPermissao.Controls.Add(this.btnPesquisar);
-            this.pnlPermissao.Controls.Add(this.txtQuantidadeDias);
-            this.pnlPermissao.Controls.Add(this.lblEstado);
-            this.pnlPermissao.Controls.Add(this.lblQuantidadeDias);
-            this.pnlPermissao.Controls.Add(this.groupBox1);
-            this.pnlPermissao.Controls.Add(this.dpEnd);
-            this.pnlPermissao.Controls.Add(this.dpStart);
-            this.pnlPermissao.Controls.Add(this.lblFinal);
-            this.pnlPermissao.Controls.Add(this.lblInicio);
-            this.pnlPermissao.Controls.Add(this.lblDataPermissao);
-            this.pnlPermissao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPermissao.Location = new System.Drawing.Point(402, 0);
-            this.pnlPermissao.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlPermissao.Name = "pnlPermissao";
-            this.pnlPermissao.Size = new System.Drawing.Size(462, 183);
-            this.pnlPermissao.TabIndex = 1;
+            this.pnlPesquisaPermissao.Controls.Add(this.btnLimpar);
+            this.pnlPesquisaPermissao.Controls.Add(this.cmbEstadosTarefa);
+            this.pnlPesquisaPermissao.Controls.Add(this.btnPesquisar);
+            this.pnlPesquisaPermissao.Controls.Add(this.txtQuantidadeDias);
+            this.pnlPesquisaPermissao.Controls.Add(this.lblEstadoTarefas);
+            this.pnlPesquisaPermissao.Controls.Add(this.lblQuantidadeDias);
+            this.pnlPesquisaPermissao.Controls.Add(this.groupBox1);
+            this.pnlPesquisaPermissao.Controls.Add(this.dpFinal);
+            this.pnlPesquisaPermissao.Controls.Add(this.dpInicio);
+            this.pnlPesquisaPermissao.Controls.Add(this.lblFinal);
+            this.pnlPesquisaPermissao.Controls.Add(this.lblInicio);
+            this.pnlPesquisaPermissao.Controls.Add(this.lblDataPermissao);
+            this.pnlPesquisaPermissao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPesquisaPermissao.Location = new System.Drawing.Point(402, 0);
+            this.pnlPesquisaPermissao.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlPesquisaPermissao.Name = "pnlPesquisaPermissao";
+            this.pnlPesquisaPermissao.Size = new System.Drawing.Size(462, 183);
+            this.pnlPesquisaPermissao.TabIndex = 1;
             // 
             // btnLimpar
             // 
@@ -372,15 +372,15 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
-            // cmbState
+            // cmbEstadosTarefa
             // 
-            this.cmbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbState.FormattingEnabled = true;
-            this.cmbState.Location = new System.Drawing.Point(125, 134);
-            this.cmbState.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbState.Name = "cmbState";
-            this.cmbState.Size = new System.Drawing.Size(141, 28);
-            this.cmbState.TabIndex = 3;
+            this.cmbEstadosTarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEstadosTarefa.FormattingEnabled = true;
+            this.cmbEstadosTarefa.Location = new System.Drawing.Point(155, 134);
+            this.cmbEstadosTarefa.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEstadosTarefa.Name = "cmbEstadosTarefa";
+            this.cmbEstadosTarefa.Size = new System.Drawing.Size(141, 28);
+            this.cmbEstadosTarefa.TabIndex = 3;
             // 
             // btnPesquisar
             // 
@@ -402,22 +402,22 @@ namespace GerenciadorEmpresarial.Permissoes
             this.txtQuantidadeDias.Size = new System.Drawing.Size(93, 26);
             this.txtQuantidadeDias.TabIndex = 2;
             // 
-            // lblEstado
+            // lblEstadoTarefas
             // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(4, 133);
-            this.lblEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(55, 18);
-            this.lblEstado.TabIndex = 21;
-            this.lblEstado.Text = "Estado";
+            this.lblEstadoTarefas.AutoSize = true;
+            this.lblEstadoTarefas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoTarefas.Location = new System.Drawing.Point(5, 138);
+            this.lblEstadoTarefas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEstadoTarefas.Name = "lblEstadoTarefas";
+            this.lblEstadoTarefas.Size = new System.Drawing.Size(132, 18);
+            this.lblEstadoTarefas.TabIndex = 21;
+            this.lblEstadoTarefas.Text = "Estado das tarefas";
             // 
             // lblQuantidadeDias
             // 
             this.lblQuantidadeDias.AutoSize = true;
             this.lblQuantidadeDias.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantidadeDias.Location = new System.Drawing.Point(4, 101);
+            this.lblQuantidadeDias.Location = new System.Drawing.Point(5, 101);
             this.lblQuantidadeDias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblQuantidadeDias.Name = "lblQuantidadeDias";
             this.lblQuantidadeDias.Size = new System.Drawing.Size(70, 18);
@@ -429,11 +429,11 @@ namespace GerenciadorEmpresarial.Permissoes
             this.groupBox1.Controls.Add(this.rbDataFinal);
             this.groupBox1.Controls.Add(this.rbDataInicial);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(222, 24);
+            this.groupBox1.Location = new System.Drawing.Point(222, 23);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(123, 84);
+            this.groupBox1.Size = new System.Drawing.Size(123, 71);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
@@ -461,15 +461,15 @@ namespace GerenciadorEmpresarial.Permissoes
             this.rbDataInicial.Text = "Dt. Inicial";
             this.rbDataInicial.UseVisualStyleBackColor = true;
             // 
-            // dpEnd
+            // dpFinal
             // 
-            this.dpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpEnd.Location = new System.Drawing.Point(125, 70);
-            this.dpEnd.Margin = new System.Windows.Forms.Padding(2);
-            this.dpEnd.Name = "dpEnd";
-            this.dpEnd.Size = new System.Drawing.Size(93, 23);
-            this.dpEnd.TabIndex = 1;
+            this.dpFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpFinal.Location = new System.Drawing.Point(125, 70);
+            this.dpFinal.Margin = new System.Windows.Forms.Padding(2);
+            this.dpFinal.Name = "dpFinal";
+            this.dpFinal.Size = new System.Drawing.Size(93, 23);
+            this.dpFinal.TabIndex = 1;
             // 
             // FrmControleDePermissoes
             // 
@@ -488,8 +488,8 @@ namespace GerenciadorEmpresarial.Permissoes
             this.pnlForAdmin.ResumeLayout(false);
             this.pnlForAdmin.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.pnlPermissao.ResumeLayout(false);
-            this.pnlPermissao.PerformLayout();
+            this.pnlPesquisaPermissao.ResumeLayout(false);
+            this.pnlPesquisaPermissao.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -506,32 +506,32 @@ namespace GerenciadorEmpresarial.Permissoes
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Panel pnlCrud;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.DateTimePicker dpStart;
+        private System.Windows.Forms.DateTimePicker dpInicio;
         private System.Windows.Forms.Label lblFinal;
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.Label lblDataPermissao;
-        private System.Windows.Forms.ComboBox cmbPosition;
+        private System.Windows.Forms.ComboBox cmbCargo;
         private System.Windows.Forms.Panel pnlForAdmin;
-        private System.Windows.Forms.ComboBox cmbDepartment;
+        private System.Windows.Forms.ComboBox cmbDepartamento;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblDepartamento;
-        private System.Windows.Forms.TextBox txtSurname;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtNumeroUsuario;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblSobrenome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblNumeroUsuario;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnlPermissao;
+        private System.Windows.Forms.Panel pnlPesquisaPermissao;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.ComboBox cmbState;
+        private System.Windows.Forms.ComboBox cmbEstadosTarefa;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtQuantidadeDias;
-        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblEstadoTarefas;
         private System.Windows.Forms.Label lblQuantidadeDias;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbDataFinal;
         private System.Windows.Forms.RadioButton rbDataInicial;
-        private System.Windows.Forms.DateTimePicker dpEnd;
+        private System.Windows.Forms.DateTimePicker dpFinal;
     }
 }

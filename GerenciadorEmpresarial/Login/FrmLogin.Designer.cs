@@ -49,17 +49,19 @@ namespace GerenciadorEmpresarial
             // 
             // txtNumeroUsuario
             // 
+            this.txtNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroUsuario.Location = new System.Drawing.Point(240, 60);
             this.txtNumeroUsuario.Name = "txtNumeroUsuario";
-            this.txtNumeroUsuario.Size = new System.Drawing.Size(155, 20);
+            this.txtNumeroUsuario.Size = new System.Drawing.Size(155, 26);
             this.txtNumeroUsuario.TabIndex = 0;
             this.txtNumeroUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroUsuario_KeyPress);
             // 
             // txtSenha
             // 
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(240, 103);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(155, 20);
+            this.txtSenha.Size = new System.Drawing.Size(155, 26);
             this.txtSenha.TabIndex = 1;
             // 
             // lblSenha

@@ -90,11 +90,11 @@ namespace GerenciadorEmpresarial.Salarios
             // lblMes
             // 
             this.lblMes.AutoSize = true;
-            this.lblMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMes.Location = new System.Drawing.Point(4, 223);
+            this.lblMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMes.Location = new System.Drawing.Point(11, 227);
             this.lblMes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMes.Name = "lblMes";
-            this.lblMes.Size = new System.Drawing.Size(42, 20);
+            this.lblMes.Size = new System.Drawing.Size(37, 18);
             this.lblMes.TabIndex = 39;
             this.lblMes.Text = "Mês";
             // 
@@ -119,27 +119,28 @@ namespace GerenciadorEmpresarial.Salarios
             // lblAno
             // 
             this.lblAno.AutoSize = true;
-            this.lblAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAno.Location = new System.Drawing.Point(4, 187);
+            this.lblAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAno.Location = new System.Drawing.Point(11, 191);
             this.lblAno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAno.Name = "lblAno";
-            this.lblAno.Size = new System.Drawing.Size(41, 20);
+            this.lblAno.Size = new System.Drawing.Size(34, 18);
             this.lblAno.TabIndex = 37;
             this.lblAno.Text = "Ano";
             // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
-            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalario.Location = new System.Drawing.Point(4, 149);
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(11, 153);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(65, 20);
+            this.lblSalario.Size = new System.Drawing.Size(54, 18);
             this.lblSalario.TabIndex = 38;
             this.lblSalario.Text = "Salário";
             // 
             // txtSobrenome
             // 
+            this.txtSobrenome.BackColor = System.Drawing.SystemColors.Window;
             this.txtSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSobrenome.Location = new System.Drawing.Point(157, 114);
             this.txtSobrenome.Margin = new System.Windows.Forms.Padding(2);
@@ -150,6 +151,7 @@ namespace GerenciadorEmpresarial.Salarios
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.SystemColors.Window;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(157, 75);
             this.txtNome.Margin = new System.Windows.Forms.Padding(2);
@@ -160,6 +162,7 @@ namespace GerenciadorEmpresarial.Salarios
             // 
             // txtNumeroUsuario
             // 
+            this.txtNumeroUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.txtNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroUsuario.Location = new System.Drawing.Point(157, 40);
             this.txtNumeroUsuario.Margin = new System.Windows.Forms.Padding(2);
@@ -171,22 +174,22 @@ namespace GerenciadorEmpresarial.Salarios
             // lblSobrenome
             // 
             this.lblSobrenome.AutoSize = true;
-            this.lblSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSobrenome.Location = new System.Drawing.Point(4, 112);
+            this.lblSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSobrenome.Location = new System.Drawing.Point(11, 116);
             this.lblSobrenome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSobrenome.Name = "lblSobrenome";
-            this.lblSobrenome.Size = new System.Drawing.Size(101, 20);
+            this.lblSobrenome.Size = new System.Drawing.Size(86, 18);
             this.lblSobrenome.TabIndex = 34;
             this.lblSobrenome.Text = "Sobrenome";
             // 
             // lblNumeroUsuario
             // 
             this.lblNumeroUsuario.AutoSize = true;
-            this.lblNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroUsuario.Location = new System.Drawing.Point(4, 40);
+            this.lblNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroUsuario.Location = new System.Drawing.Point(11, 44);
             this.lblNumeroUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumeroUsuario.Name = "lblNumeroUsuario";
-            this.lblNumeroUsuario.Size = new System.Drawing.Size(120, 20);
+            this.lblNumeroUsuario.Size = new System.Drawing.Size(100, 18);
             this.lblNumeroUsuario.TabIndex = 36;
             this.lblNumeroUsuario.Text = "Nº de Usuário";
             // 
@@ -204,7 +207,7 @@ namespace GerenciadorEmpresarial.Salarios
             // 
             this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDepartamento.FormattingEnabled = true;
-            this.cmbDepartamento.Location = new System.Drawing.Point(162, 6);
+            this.cmbDepartamento.Location = new System.Drawing.Point(162, 14);
             this.cmbDepartamento.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDepartamento.Name = "cmbDepartamento";
             this.cmbDepartamento.Size = new System.Drawing.Size(169, 28);
@@ -213,22 +216,22 @@ namespace GerenciadorEmpresarial.Salarios
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
-            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCargo.Location = new System.Drawing.Point(19, 62);
             this.lblCargo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(57, 20);
+            this.lblCargo.Size = new System.Drawing.Size(52, 20);
             this.lblCargo.TabIndex = 18;
             this.lblCargo.Text = "Cargo";
             // 
             // lblDepartamento
             // 
             this.lblDepartamento.AutoSize = true;
-            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartamento.Location = new System.Drawing.Point(19, 6);
+            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartamento.Location = new System.Drawing.Point(19, 14);
             this.lblDepartamento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDepartamento.Name = "lblDepartamento";
-            this.lblDepartamento.Size = new System.Drawing.Size(124, 20);
+            this.lblDepartamento.Size = new System.Drawing.Size(112, 20);
             this.lblDepartamento.TabIndex = 19;
             this.lblDepartamento.Text = "Departamento";
             // 
@@ -246,11 +249,11 @@ namespace GerenciadorEmpresarial.Salarios
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(4, 75);
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(11, 79);
             this.lblNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(55, 20);
+            this.lblNome.Size = new System.Drawing.Size(49, 18);
             this.lblNome.TabIndex = 35;
             this.lblNome.Text = "Nome";
             // 

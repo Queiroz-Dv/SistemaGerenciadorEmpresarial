@@ -29,43 +29,43 @@ namespace GerenciadorEmpresarial.Colaboradores
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlCrud = new System.Windows.Forms.Panel();
             this.btnGravar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.cmbDepartment = new System.Windows.Forms.ComboBox();
-            this.txtSurname = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtUserNo = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtNumeroUsuario = new System.Windows.Forms.TextBox();
+            this.dgvControleColaboradores = new System.Windows.Forms.DataGridView();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlPesquisaColaboradores = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.lblCargos = new System.Windows.Forms.Label();
-            this.lblDepartamentos = new System.Windows.Forms.Label();
+            this.lblCargo = new System.Windows.Forms.Label();
+            this.lblDepartamento = new System.Windows.Forms.Label();
             this.lblSobrenome = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.cmbPosition = new System.Windows.Forms.ComboBox();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
+            this.pnlCrud.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvControleColaboradores)).BeginInit();
+            this.pnlPesquisaColaboradores.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnlCrud
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.btnGravar);
-            this.panel2.Controls.Add(this.btnAtualizar);
-            this.panel2.Controls.Add(this.btnDeletar);
-            this.panel2.Controls.Add(this.btnVoltar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 388);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 77);
-            this.panel2.TabIndex = 5;
+            this.pnlCrud.BackColor = System.Drawing.Color.Transparent;
+            this.pnlCrud.Controls.Add(this.btnGravar);
+            this.pnlCrud.Controls.Add(this.btnAtualizar);
+            this.pnlCrud.Controls.Add(this.btnDeletar);
+            this.pnlCrud.Controls.Add(this.btnVoltar);
+            this.pnlCrud.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlCrud.Location = new System.Drawing.Point(0, 388);
+            this.pnlCrud.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlCrud.Name = "pnlCrud";
+            this.pnlCrud.Size = new System.Drawing.Size(710, 77);
+            this.pnlCrud.TabIndex = 5;
             // 
             // btnGravar
             // 
@@ -111,64 +111,64 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // cmbDepartment
+            // cmbCargo
             // 
-            this.cmbDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartment.FormattingEnabled = true;
-            this.cmbDepartment.Location = new System.Drawing.Point(468, 11);
-            this.cmbDepartment.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbDepartment.Name = "cmbDepartment";
-            this.cmbDepartment.Size = new System.Drawing.Size(190, 28);
-            this.cmbDepartment.TabIndex = 3;
+            this.cmbCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Location = new System.Drawing.Point(468, 11);
+            this.cmbCargo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(190, 28);
+            this.cmbCargo.TabIndex = 3;
             // 
-            // txtSurname
+            // txtSobrenome
             // 
-            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSurname.Location = new System.Drawing.Point(159, 88);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(190, 26);
-            this.txtSurname.TabIndex = 2;
+            this.txtSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSobrenome.Location = new System.Drawing.Point(159, 88);
+            this.txtSobrenome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(190, 26);
+            this.txtSobrenome.TabIndex = 2;
             // 
-            // txtName
+            // txtNome
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(159, 47);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(190, 26);
-            this.txtName.TabIndex = 1;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(159, 47);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(190, 26);
+            this.txtNome.TabIndex = 1;
             // 
-            // txtUserNo
+            // txtNumeroUsuario
             // 
-            this.txtUserNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserNo.Location = new System.Drawing.Point(159, 11);
-            this.txtUserNo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUserNo.Name = "txtUserNo";
-            this.txtUserNo.Size = new System.Drawing.Size(190, 26);
-            this.txtUserNo.TabIndex = 0;
+            this.txtNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroUsuario.Location = new System.Drawing.Point(159, 11);
+            this.txtNumeroUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNumeroUsuario.Name = "txtNumeroUsuario";
+            this.txtNumeroUsuario.Size = new System.Drawing.Size(190, 26);
+            this.txtNumeroUsuario.TabIndex = 0;
             // 
-            // dataGridView1
+            // dgvControleColaboradores
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 169);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(710, 296);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvControleColaboradores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvControleColaboradores.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvControleColaboradores.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvControleColaboradores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvControleColaboradores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvControleColaboradores.GridColor = System.Drawing.Color.White;
+            this.dgvControleColaboradores.Location = new System.Drawing.Point(0, 169);
+            this.dgvControleColaboradores.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvControleColaboradores.MultiSelect = false;
+            this.dgvControleColaboradores.Name = "dgvControleColaboradores";
+            this.dgvControleColaboradores.RowTemplate.Height = 28;
+            this.dgvControleColaboradores.Size = new System.Drawing.Size(710, 296);
+            this.dgvControleColaboradores.TabIndex = 4;
             // 
             // btnLimpar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.White;
+            this.btnLimpar.BackColor = System.Drawing.SystemColors.Control;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(380, 112);
+            this.btnLimpar.Location = new System.Drawing.Point(549, 112);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(100, 38);
@@ -176,27 +176,27 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // pnlPesquisaColaboradores
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.lblCargos);
-            this.panel1.Controls.Add(this.lblDepartamentos);
-            this.panel1.Controls.Add(this.lblSobrenome);
-            this.panel1.Controls.Add(this.lblNome);
-            this.panel1.Controls.Add(this.btnLimpar);
-            this.panel1.Controls.Add(this.btnPesquisar);
-            this.panel1.Controls.Add(this.cmbPosition);
-            this.panel1.Controls.Add(this.cmbDepartment);
-            this.panel1.Controls.Add(this.txtSurname);
-            this.panel1.Controls.Add(this.txtName);
-            this.panel1.Controls.Add(this.txtUserNo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(710, 169);
-            this.panel1.TabIndex = 3;
+            this.pnlPesquisaColaboradores.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPesquisaColaboradores.Controls.Add(this.label10);
+            this.pnlPesquisaColaboradores.Controls.Add(this.lblCargo);
+            this.pnlPesquisaColaboradores.Controls.Add(this.lblDepartamento);
+            this.pnlPesquisaColaboradores.Controls.Add(this.lblSobrenome);
+            this.pnlPesquisaColaboradores.Controls.Add(this.lblNome);
+            this.pnlPesquisaColaboradores.Controls.Add(this.btnLimpar);
+            this.pnlPesquisaColaboradores.Controls.Add(this.btnPesquisar);
+            this.pnlPesquisaColaboradores.Controls.Add(this.cmbDepartamento);
+            this.pnlPesquisaColaboradores.Controls.Add(this.cmbCargo);
+            this.pnlPesquisaColaboradores.Controls.Add(this.txtSobrenome);
+            this.pnlPesquisaColaboradores.Controls.Add(this.txtNome);
+            this.pnlPesquisaColaboradores.Controls.Add(this.txtNumeroUsuario);
+            this.pnlPesquisaColaboradores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPesquisaColaboradores.Location = new System.Drawing.Point(0, 0);
+            this.pnlPesquisaColaboradores.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlPesquisaColaboradores.Name = "pnlPesquisaColaboradores";
+            this.pnlPesquisaColaboradores.Size = new System.Drawing.Size(710, 169);
+            this.pnlPesquisaColaboradores.TabIndex = 3;
             // 
             // label10
             // 
@@ -208,25 +208,25 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.label10.TabIndex = 58;
             this.label10.Text = "Nº de Usuário";
             // 
-            // lblCargos
+            // lblCargo
             // 
-            this.lblCargos.AutoSize = true;
-            this.lblCargos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargos.Location = new System.Drawing.Point(377, 15);
-            this.lblCargos.Name = "lblCargos";
-            this.lblCargos.Size = new System.Drawing.Size(57, 18);
-            this.lblCargos.TabIndex = 60;
-            this.lblCargos.Text = "Cargos";
+            this.lblCargo.AutoSize = true;
+            this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.Location = new System.Drawing.Point(377, 15);
+            this.lblCargo.Name = "lblCargo";
+            this.lblCargo.Size = new System.Drawing.Size(49, 18);
+            this.lblCargo.TabIndex = 60;
+            this.lblCargo.Text = "Cargo";
             // 
-            // lblDepartamentos
+            // lblDepartamento
             // 
-            this.lblDepartamentos.AutoSize = true;
-            this.lblDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartamentos.Location = new System.Drawing.Point(12, 132);
-            this.lblDepartamentos.Name = "lblDepartamentos";
-            this.lblDepartamentos.Size = new System.Drawing.Size(110, 18);
-            this.lblDepartamentos.TabIndex = 59;
-            this.lblDepartamentos.Text = "Departamentos";
+            this.lblDepartamento.AutoSize = true;
+            this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartamento.Location = new System.Drawing.Point(12, 132);
+            this.lblDepartamento.Name = "lblDepartamento";
+            this.lblDepartamento.Size = new System.Drawing.Size(102, 18);
+            this.lblDepartamento.TabIndex = 59;
+            this.lblDepartamento.Text = "Departamento";
             // 
             // lblSobrenome
             // 
@@ -250,9 +250,9 @@ namespace GerenciadorEmpresarial.Colaboradores
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.BackColor = System.Drawing.Color.White;
+            this.btnPesquisar.BackColor = System.Drawing.SystemColors.Control;
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisar.Location = new System.Drawing.Point(380, 61);
+            this.btnPesquisar.Location = new System.Drawing.Point(406, 112);
             this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(100, 38);
@@ -260,51 +260,51 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = false;
             // 
-            // cmbPosition
+            // cmbDepartamento
             // 
-            this.cmbPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPosition.FormattingEnabled = true;
-            this.cmbPosition.Location = new System.Drawing.Point(159, 132);
-            this.cmbPosition.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbPosition.Name = "cmbPosition";
-            this.cmbPosition.Size = new System.Drawing.Size(190, 28);
-            this.cmbPosition.TabIndex = 4;
+            this.cmbDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartamento.FormattingEnabled = true;
+            this.cmbDepartamento.Location = new System.Drawing.Point(159, 127);
+            this.cmbDepartamento.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbDepartamento.Name = "cmbDepartamento";
+            this.cmbDepartamento.Size = new System.Drawing.Size(190, 28);
+            this.cmbDepartamento.TabIndex = 4;
             // 
             // FrmControleDeColaboradores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 465);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlCrud);
+            this.Controls.Add(this.dgvControleColaboradores);
+            this.Controls.Add(this.pnlPesquisaColaboradores);
             this.MaximizeBox = false;
             this.Name = "FrmControleDeColaboradores";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle De Colaboradores";
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlCrud.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvControleColaboradores)).EndInit();
+            this.pnlPesquisaColaboradores.ResumeLayout(false);
+            this.pnlPesquisaColaboradores.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbDepartment;
-        private System.Windows.Forms.TextBox txtSurname;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtUserNo;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel pnlCrud;
+        private System.Windows.Forms.ComboBox cmbCargo;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtNumeroUsuario;
+        private System.Windows.Forms.DataGridView dgvControleColaboradores;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlPesquisaColaboradores;
         private System.Windows.Forms.Button btnPesquisar;
-        private System.Windows.Forms.ComboBox cmbPosition;
+        private System.Windows.Forms.ComboBox cmbDepartamento;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblCargos;
-        private System.Windows.Forms.Label lblDepartamentos;
+        private System.Windows.Forms.Label lblCargo;
+        private System.Windows.Forms.Label lblDepartamento;
         private System.Windows.Forms.Label lblSobrenome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Button btnGravar;
