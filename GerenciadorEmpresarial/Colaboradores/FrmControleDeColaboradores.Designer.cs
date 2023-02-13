@@ -41,7 +41,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.dgvControleColaboradores = new System.Windows.Forms.DataGridView();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.pnlPesquisaColaboradores = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblNumeroUsuario = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
             this.lblDepartamento = new System.Windows.Forms.Label();
             this.lblSobrenome = new System.Windows.Forms.Label();
@@ -77,6 +77,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnGravar.TabIndex = 4;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnAtualizar
             // 
@@ -88,6 +89,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnAtualizar.TabIndex = 5;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnDeletar
             // 
@@ -110,6 +112,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnVoltar.TabIndex = 7;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // cmbCargo
             // 
@@ -179,7 +182,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             // pnlPesquisaColaboradores
             // 
             this.pnlPesquisaColaboradores.BackColor = System.Drawing.Color.Transparent;
-            this.pnlPesquisaColaboradores.Controls.Add(this.label10);
+            this.pnlPesquisaColaboradores.Controls.Add(this.lblNumeroUsuario);
             this.pnlPesquisaColaboradores.Controls.Add(this.lblCargo);
             this.pnlPesquisaColaboradores.Controls.Add(this.lblDepartamento);
             this.pnlPesquisaColaboradores.Controls.Add(this.lblSobrenome);
@@ -198,15 +201,15 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.pnlPesquisaColaboradores.Size = new System.Drawing.Size(710, 169);
             this.pnlPesquisaColaboradores.TabIndex = 3;
             // 
-            // label10
+            // lblNumeroUsuario
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 15);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 18);
-            this.label10.TabIndex = 58;
-            this.label10.Text = "Nº de Usuário";
+            this.lblNumeroUsuario.AutoSize = true;
+            this.lblNumeroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroUsuario.Location = new System.Drawing.Point(12, 15);
+            this.lblNumeroUsuario.Name = "lblNumeroUsuario";
+            this.lblNumeroUsuario.Size = new System.Drawing.Size(100, 18);
+            this.lblNumeroUsuario.TabIndex = 58;
+            this.lblNumeroUsuario.Text = "Nº de Usuário";
             // 
             // lblCargo
             // 
@@ -302,7 +305,7 @@ namespace GerenciadorEmpresarial.Colaboradores
         private System.Windows.Forms.Panel pnlPesquisaColaboradores;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.ComboBox cmbDepartamento;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblNumeroUsuario;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblDepartamento;
         private System.Windows.Forms.Label lblSobrenome;

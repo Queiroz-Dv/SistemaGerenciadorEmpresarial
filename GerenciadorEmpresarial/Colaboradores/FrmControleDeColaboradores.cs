@@ -1,20 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GerenciadorEmpresarial.Colaboradores
 {
     public partial class FrmControleDeColaboradores : Form
     {
-        public FrmControleDeColaboradores()
+        public FrmControleDeColaboradores() => InitializeComponent();
+
+        private void btnVoltar_Click(object sender, EventArgs e) => Close();
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            Hide();
+            new FrmControleDeColaboradores().ShowDialog();
+            Visible = true;
+        }
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FrmControleDeColaboradores().ShowDialog();
+            Visible = true;
         }
     }
 }

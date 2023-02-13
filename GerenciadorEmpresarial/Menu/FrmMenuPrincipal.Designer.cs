@@ -48,6 +48,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnColaborador.TabIndex = 0;
             this.btnColaborador.Text = "Colaboradores";
             this.btnColaborador.UseVisualStyleBackColor = true;
+            this.btnColaborador.Click += new System.EventHandler(this.btnColaborador_Click);
             // 
             // btnTarefas
             // 
