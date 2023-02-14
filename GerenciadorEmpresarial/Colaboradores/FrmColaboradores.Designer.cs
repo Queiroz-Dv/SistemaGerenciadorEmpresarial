@@ -275,6 +275,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.btnVoltar.TabIndex = 10;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // chkAdmin
             // 
@@ -392,6 +393,7 @@ namespace GerenciadorEmpresarial.Colaboradores
             this.Controls.Add(this.pnlUsuario);
             this.Name = "FrmColaboradores";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colaboradores";
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             this.pnlCrud.ResumeLayout(false);

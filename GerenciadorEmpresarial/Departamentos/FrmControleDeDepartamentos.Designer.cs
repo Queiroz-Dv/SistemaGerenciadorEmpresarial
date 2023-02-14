@@ -62,6 +62,7 @@ namespace GerenciadorEmpresarial.Departamentos
             this.btnVoltar.TabIndex = 3;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnDeletar
             // 
@@ -84,6 +85,7 @@ namespace GerenciadorEmpresarial.Departamentos
             this.btnAtualizar.TabIndex = 1;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnGravar
             // 
@@ -95,6 +97,7 @@ namespace GerenciadorEmpresarial.Departamentos
             this.btnGravar.TabIndex = 0;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -117,6 +120,7 @@ namespace GerenciadorEmpresarial.Departamentos
             this.Controls.Add(this.dgvDepartamentos);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FrmControleDeDepartamentos";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle De Departamentos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepartamentos)).EndInit();

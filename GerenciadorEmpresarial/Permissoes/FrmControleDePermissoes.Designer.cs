@@ -116,6 +116,7 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnGravar.TabIndex = 2;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnAtualizar
             // 
@@ -127,6 +128,7 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnAtualizar.TabIndex = 3;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnDeletar
             // 
@@ -164,6 +166,7 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnVoltar.TabIndex = 5;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // dpInicio
             // 
@@ -295,6 +298,7 @@ namespace GerenciadorEmpresarial.Permissoes
             this.txtNumeroUsuario.Name = "txtNumeroUsuario";
             this.txtNumeroUsuario.Size = new System.Drawing.Size(210, 26);
             this.txtNumeroUsuario.TabIndex = 0;
+            this.txtNumeroUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroUsuario_KeyPress);
             // 
             // lblSobrenome
             // 
@@ -401,6 +405,7 @@ namespace GerenciadorEmpresarial.Permissoes
             this.txtQuantidadeDias.Name = "txtQuantidadeDias";
             this.txtQuantidadeDias.Size = new System.Drawing.Size(93, 26);
             this.txtQuantidadeDias.TabIndex = 2;
+            this.txtQuantidadeDias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantidadeDias_KeyPress);
             // 
             // lblEstadoTarefas
             // 

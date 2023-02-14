@@ -148,6 +148,7 @@ namespace GerenciadorEmpresarial.Permissoes
             this.btnVoltar.TabIndex = 69;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnGravar
             // 
@@ -180,7 +181,6 @@ namespace GerenciadorEmpresarial.Permissoes
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Permissoes";
-            this.Load += new System.EventHandler(this.FrmPermissoes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

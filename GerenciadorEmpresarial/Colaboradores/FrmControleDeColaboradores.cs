@@ -12,14 +12,14 @@ namespace GerenciadorEmpresarial.Colaboradores
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
             Hide();
-            new FrmControleDeColaboradores().ShowDialog();
+            new FrmColaboradores().ShowDialog();
             Visible = true;
         }
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
             Hide();
-            new FrmControleDeColaboradores().ShowDialog();
+            new FrmColaboradores().ShowDialog();
             Visible = true;
         }
     }

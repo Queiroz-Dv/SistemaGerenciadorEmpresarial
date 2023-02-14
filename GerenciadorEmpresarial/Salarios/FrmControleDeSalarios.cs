@@ -12,9 +12,22 @@ namespace GerenciadorEmpresarial.Salarios
 {
     public partial class FrmControleDeSalarios : Form
     {
-        public FrmControleDeSalarios()
+        public FrmControleDeSalarios() => InitializeComponent();
+
+        private void btnGravar_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            Hide();
+            new FrmSalarios().ShowDialog();
+            Visible = true;
         }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new FrmSalarios().ShowDialog();
+            Visible = true;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e) => Close();
     }
 }

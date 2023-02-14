@@ -84,6 +84,8 @@ namespace GerenciadorEmpresarial.Departamentos
             this.Controls.Add(this.txtDepartamento);
             this.Controls.Add(this.lblDepartamento);
             this.Name = "FrmDepartamento";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Departamentos";
             this.ResumeLayout(false);
             this.PerformLayout();

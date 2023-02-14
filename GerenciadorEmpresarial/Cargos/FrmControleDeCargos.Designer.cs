@@ -62,6 +62,7 @@ namespace GerenciadorEmpresarial.Cargos
             this.btnGravar.TabIndex = 0;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnAtualizar
             // 
@@ -73,6 +74,7 @@ namespace GerenciadorEmpresarial.Cargos
             this.btnAtualizar.TabIndex = 1;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -118,6 +120,7 @@ namespace GerenciadorEmpresarial.Cargos
             this.Controls.Add(this.dgvCargos);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FrmControleDeCargos";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle De Cargos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargos)).EndInit();

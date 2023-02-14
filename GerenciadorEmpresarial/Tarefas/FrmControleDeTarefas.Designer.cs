@@ -117,6 +117,7 @@ namespace GerenciadorEmpresarial.Tarefas
             this.btnGravar.TabIndex = 6;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnAtualizar
             // 
@@ -128,6 +129,7 @@ namespace GerenciadorEmpresarial.Tarefas
             this.btnAtualizar.TabIndex = 7;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnDeletar
             // 
@@ -272,6 +274,7 @@ namespace GerenciadorEmpresarial.Tarefas
             this.txtNumeroUsuario.Name = "txtNumeroUsuario";
             this.txtNumeroUsuario.Size = new System.Drawing.Size(176, 26);
             this.txtNumeroUsuario.TabIndex = 0;
+            this.txtNumeroUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroUsuario_KeyPress);
             // 
             // lblDataFinal
             // 
@@ -448,6 +451,7 @@ namespace GerenciadorEmpresarial.Tarefas
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle De Tarefas";
+            this.Load += new System.EventHandler(this.FrmControleDeTarefas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvControleTarefas)).EndInit();
             this.pnlCrud.ResumeLayout(false);
             this.pnlForAdmin.ResumeLayout(false);
