@@ -55,6 +55,7 @@ namespace GerenciadorEmpresarial.Departamentos
             this.btnGravar.TabIndex = 1;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // txtDepartamento
             // 

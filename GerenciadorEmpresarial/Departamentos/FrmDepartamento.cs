@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BLL.Departamento;
+using BLL.Validacoes;
+using DAL;
+using System;
 using System.Windows.Forms;
 
 namespace GerenciadorEmpresarial.Departamentos
@@ -8,5 +11,33 @@ namespace GerenciadorEmpresarial.Departamentos
         public FrmDepartamento() => InitializeComponent();
 
         private void btnVoltar_Click(object sender, EventArgs e) => this.Close();
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+            if (ValidateBase.Quando(txtDepartamento.Text.Trim() == "") )
+            {
+                MessageBox.Show("Preencha o campo de departamento!");
+            }
+            else if(ValidateBase.Quando(txtDepartamento.Text.Length > 50))
+            {
+                MessageBox.Show("Quantidade de caracteres inválido");
+            }
+            else
+            {
+                // Criando o objeto de acesso
+                var departamento = new DEPARTAMENTO
+                {
+                    //Atribui o valor digitado para a propriedade
+                    DepartamentoNome = txtDepartamento.Text
+                };
+
+                // Repassa para a camada de negócio tratar e gravar
+                DepartamentosBLL.GravarDepartamento(departamento);
+                MessageBox.Show("Departamento adicionado com sucesso!");
+                LimparCampo();
+            }
+        }
+
+        private void LimparCampo() => txtDepartamento.Clear();
     }
 }
