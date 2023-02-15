@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GerenciadorEmpresarial" Class="ClasseDeDadosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MRJ01-NTB506;Initial Catalog=GerenciadorEmpresarial;Integrated Security=True;Pooling=False" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="GerenciadorEmpresarialConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AUTORIZACAO" Member="AUTORIZACAO">
+    <Type Name="AUTORIZACAO">
+      <Column Name="AutorizacaoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColaboradorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AutorizacaoDataInicial" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AutorizacaoDataFinal" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AutorizacaoEstado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AutorizacaoDescricao" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AutorizacaoDia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUTORIZACAOESTADO" Member="AUTORIZACAOESTADO">
+    <Type Name="AUTORIZACAOESTADO">
+      <Column Name="EstadoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EstadoNome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CARGO" Member="CARGO">
+    <Type Name="CARGO">
+      <Column Name="CargoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CargoNome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepartamentoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.COLABORADOR" Member="COLABORADOR">
+    <Type Name="COLABORADOR">
+      <Column Name="ColaboradorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NumeroUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sobrenome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CaminhoImagem" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DepartamentoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CargoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Salario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DtNascimento" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Senha" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="isAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DEPARTAMENTO" Member="DEPARTAMENTO">
+    <Type Name="DEPARTAMENTO">
+      <Column Name="DepartamentoID" AccessModifier="Private" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepartamentoNome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MESES" Member="MESES">
+    <Type Name="MESES">
+      <Column Name="MesesID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MesNome" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SALARIO" Member="SALARIO">
+    <Type Name="SALARIO">
+      <Column Name="SalarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColaboradorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quantidade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ano" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MesID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAREFAS" Member="TAREFAS">
+    <Type Name="TAREFAS">
+      <Column Name="TarefaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ColaboradorID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TarefaTitulo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TarefaConteudo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TarefaDataInicial" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TarefaDataEntrega" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TarefaEstado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAREFASESTADO" Member="TAREFASESTADO">
+    <Type Name="TAREFASESTADO">
+      <Column Name="TarefasEstadoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TarefasEstadoNome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -48,6 +48,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnColaborador.TabIndex = 0;
             this.btnColaborador.Text = "Colaboradores";
             this.btnColaborador.UseVisualStyleBackColor = true;
+            this.btnColaborador.Click += new System.EventHandler(this.btnColaborador_Click);
             // 
             // btnTarefas
             // 
@@ -58,6 +59,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnTarefas.TabIndex = 1;
             this.btnTarefas.Text = "Tarefas";
             this.btnTarefas.UseVisualStyleBackColor = true;
+            this.btnTarefas.Click += new System.EventHandler(this.btnTarefas_Click);
             // 
             // btnSalario
             // 
@@ -66,8 +68,9 @@ namespace GerenciadorEmpresarial.Menu
             this.btnSalario.Name = "btnSalario";
             this.btnSalario.Size = new System.Drawing.Size(123, 111);
             this.btnSalario.TabIndex = 2;
-            this.btnSalario.Text = "Salario";
+            this.btnSalario.Text = "Salário";
             this.btnSalario.UseVisualStyleBackColor = true;
+            this.btnSalario.Click += new System.EventHandler(this.btnSalario_Click);
             // 
             // btnPermissao
             // 
@@ -78,6 +81,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnPermissao.TabIndex = 3;
             this.btnPermissao.Text = "Permissões";
             this.btnPermissao.UseVisualStyleBackColor = true;
+            this.btnPermissao.Click += new System.EventHandler(this.btnPermissao_Click);
             // 
             // btnDepartamento
             // 
@@ -88,6 +92,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnDepartamento.TabIndex = 4;
             this.btnDepartamento.Text = "Departamentos";
             this.btnDepartamento.UseVisualStyleBackColor = true;
+            this.btnDepartamento.Click += new System.EventHandler(this.btnDepartamento_Click);
             // 
             // btnCargo
             // 
@@ -98,6 +103,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnCargo.TabIndex = 5;
             this.btnCargo.Text = "Cargos";
             this.btnCargo.UseVisualStyleBackColor = true;
+            this.btnCargo.Click += new System.EventHandler(this.btnCargo_Click);
             // 
             // btnLogout
             // 
@@ -108,6 +114,7 @@ namespace GerenciadorEmpresarial.Menu
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnFechar
             // 
@@ -134,7 +141,10 @@ namespace GerenciadorEmpresarial.Menu
             this.Controls.Add(this.btnTarefas);
             this.Controls.Add(this.btnColaborador);
             this.Name = "FrmMenuPrincipal";
-            this.Text = "FrmMenuPrincipal";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu Principal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMenuPrincipal_FormClosed);
             this.ResumeLayout(false);
 
         }
