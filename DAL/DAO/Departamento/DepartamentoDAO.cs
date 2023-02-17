@@ -12,6 +12,7 @@ namespace DAL.DAO.Departamento
         /// </summary>
         public static void Gravar(DEPARTAMENTO departamento)
         {
+
             try
             {
                 // Insere a entidade no banco
@@ -23,10 +24,6 @@ namespace DAL.DAO.Departamento
             catch (Exception ex)
             {
                 throw ex;
-            }
-            finally
-            {
-                dataContext.Transaction.Commit();
             }
         }
     }
