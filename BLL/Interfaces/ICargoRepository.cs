@@ -1,11 +1,12 @@
 ﻿using DAL;
+using DAL.DTO.Cargo;
 using System.Collections.Generic;
 
 namespace BLL.Interfaces
 {
     public interface ICargoRepository
     {
-        List<CARGO> ObterCargos();
+        List<CargosDTO> ObterCargos();
 
         CARGO GravarCargo(CARGO departamento);
 

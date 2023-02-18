@@ -15,7 +15,6 @@ namespace GerenciadorEmpresarial.Cargos
 
         private void btnVoltar_Click(object sender, EventArgs e) => Close();
 
-
         private void FrmCargos_Load(object sender, EventArgs e)
         {
             ConfigurarcmbDepartamentos();

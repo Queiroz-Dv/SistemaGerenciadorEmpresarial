@@ -1,6 +1,7 @@
 ﻿using BLL.Interfaces;
 using DAL;
 using DAL.DAO.Cargo;
+using DAL.DTO.Cargo;
 using System.Collections.Generic;
 
 namespace BLL.Repositorios
@@ -28,9 +29,10 @@ namespace BLL.Repositorios
             return cargo;
         }
 
-        public List<CARGO> ObterCargos()
+        public List<CargosDTO> ObterCargos()
         {
-            throw new System.NotImplementedException();
+            var cargosDAO = CargosDAO.ObterTodos();
+            return cargosDAO;
         }
     }
 }
