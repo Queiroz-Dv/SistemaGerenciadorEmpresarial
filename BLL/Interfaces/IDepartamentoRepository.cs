@@ -5,12 +5,14 @@ namespace BLL.Interfaces
 {
     public interface IDepartamentoRepository
     {
-        IEnumerable<DEPARTAMENTO> ObterDepartamentos(DEPARTAMENTO departamento);
+        List<DEPARTAMENTO> ObterDepartamentos();
 
         DEPARTAMENTO GravarDepartamento(DEPARTAMENTO departamento);
 
-        DEPARTAMENTO AtualizarDepartamento(DEPARTAMENTO departamento);
+        DEPARTAMENTO AtualizarDepartamento(int id);
 
-        DEPARTAMENTO DeletarDepartamento(DEPARTAMENTO departamento);
+        DEPARTAMENTO DeletarDepartamento(int id);
+
+        DEPARTAMENTO DeletarDepartamentos(DEPARTAMENTO departamentos);
     }
 }

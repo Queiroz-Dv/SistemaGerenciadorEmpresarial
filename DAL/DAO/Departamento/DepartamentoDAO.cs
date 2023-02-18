@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DAL.DAO.Departamento
 {
@@ -25,6 +27,15 @@ namespace DAL.DAO.Departamento
             {
                 throw ex;
             }
+        }
+
+        /// <summary>
+        /// Método que obtem todos os departamentos
+        /// </summary>
+        public static List<DEPARTAMENTO> ObterTodos()
+        {
+            var departamentosBD = dataContext.DEPARTAMENTO.ToList();
+            return departamentosBD;
         }
     }
 }
