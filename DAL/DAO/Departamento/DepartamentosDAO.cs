@@ -7,7 +7,7 @@ namespace DAL.DAO.Departamento
     /// <summary>
     /// Classe responsável pelas operações CRUD do módulo Departamento
     /// </summary>
-    public class DepartamentoDAO : Contexto
+    public class DepartamentosDAO : Contexto
     {
         /// <summary>
         /// Método que gravar a entidade no banco de dados

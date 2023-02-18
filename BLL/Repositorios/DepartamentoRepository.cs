@@ -6,6 +6,9 @@ using System.Collections.Generic;
 
 namespace BLL.Repositorios
 {
+    /// <summary>
+    /// Repositório do módulo de Departamento
+    /// </summary>
     public class DepartamentoRepository : IDepartamentoRepository
     {
         public DEPARTAMENTO AtualizarDepartamento(int id)
@@ -27,13 +30,13 @@ namespace BLL.Repositorios
         {
             if (departamento != null)
             {
-                DepartamentoDAO.Gravar(departamento); // Repassa o objeto para a camada de persistência
+                DepartamentosDAO.Gravar(departamento); // Repassa o objeto para a camada de persistência
                 return departamento;
             }
             else
                 return departamento;
         }
 
-        public List<DEPARTAMENTO> ObterDepartamentos() => DepartamentoDAO.ObterTodos();
+        public List<DEPARTAMENTO> ObterDepartamentos() => DepartamentosDAO.ObterTodos();
     }
 }

@@ -57,6 +57,7 @@ namespace GerenciadorEmpresarial.Cargos
             this.btnGravar.TabIndex = 8;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // txtCargo
             // 
@@ -113,6 +114,7 @@ namespace GerenciadorEmpresarial.Cargos
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cargos";
+            this.Load += new System.EventHandler(this.FrmCargos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

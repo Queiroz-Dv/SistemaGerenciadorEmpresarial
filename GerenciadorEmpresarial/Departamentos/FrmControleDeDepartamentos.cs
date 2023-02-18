@@ -6,7 +6,7 @@ namespace GerenciadorEmpresarial.Departamentos
 {
     public partial class FrmControleDeDepartamentos : Form
     {
-        private DepartamentosBLL departamentoBLL = new DepartamentosBLL();
+        private readonly DepartamentosBLL departamentoBLL = new DepartamentosBLL();
 
         public FrmControleDeDepartamentos() => InitializeComponent();
 
@@ -18,6 +18,15 @@ namespace GerenciadorEmpresarial.Departamentos
             PreencheGrid();
         }
 
+        private void PreencheGrid()
+        {
+            // Busca os departamentos através da camada de negócio
+            var departamentos = departamentoBLL.ObterDepartamentos();
+
+            // Repassa o objeto pra preencher a grid
+            dgvDepartamentos.DataSource = departamentos;
+        }
+
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
             Hide();
@@ -26,7 +35,6 @@ namespace GerenciadorEmpresarial.Departamentos
         }
 
         private void btnVoltar_Click(object sender, EventArgs e) => Close();
-
 
         private void FrmControleDeDepartamentos_Load(object sender, EventArgs e)
         {
@@ -38,15 +46,6 @@ namespace GerenciadorEmpresarial.Departamentos
         {
             dgvDepartamentos.Columns[0].Visible = false;
             dgvDepartamentos.Columns[1].HeaderText = "Departamentos";
-        }
-
-        private void PreencheGrid()
-        {
-            // Busca os departamentos através da camada de negócio
-            var departamentos = departamentoBLL.ObterDepartamentos();
-
-            // Repassa o objeto pra preencher a grid
-            dgvDepartamentos.DataSource = departamentos;
         }
     }
 }

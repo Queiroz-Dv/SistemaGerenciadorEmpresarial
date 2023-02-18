@@ -16,15 +16,15 @@ namespace GerenciadorEmpresarial.Departamentos
         {
             if (ValidateBase.Quando(txtDepartamento.Text.Trim() == ""))
             {
-                MessageBox.Show("Preencha o campo de departamento!");
+                MessageBox.Show("Preencha o campo de departamento!", Text, MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             else if (ValidateBase.Quando(txtDepartamento.Text.Length > 50))
             {
-                MessageBox.Show("Quantidade de caracteres inválido");
+                MessageBox.Show("Quantidade de caracteres inválido", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (ValidateBase.Quando(txtDepartamento.Text.Length < 3))
             {
-                MessageBox.Show("Quantidade de caracteres inválido");
+                MessageBox.Show("Quantidade de caracteres inválido", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
