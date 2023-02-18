@@ -14,11 +14,15 @@ namespace GerenciadorEmpresarial.Departamentos
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-            if (ValidateBase.Quando(txtDepartamento.Text.Trim() == "") )
+            if (ValidateBase.Quando(txtDepartamento.Text.Trim() == ""))
             {
                 MessageBox.Show("Preencha o campo de departamento!");
             }
-            else if(ValidateBase.Quando(txtDepartamento.Text.Length > 50))
+            else if (ValidateBase.Quando(txtDepartamento.Text.Length > 50))
+            {
+                MessageBox.Show("Quantidade de caracteres inválido");
+            }
+            else if (ValidateBase.Quando(txtDepartamento.Text.Length < 3))
             {
                 MessageBox.Show("Quantidade de caracteres inválido");
             }
@@ -32,7 +36,7 @@ namespace GerenciadorEmpresarial.Departamentos
                 };
 
                 // Repassa para a camada de negócio tratar e gravar
-                DepartamentosBLL.GravarDepartamento(departamento);
+                new DepartamentosBLL().GravarDepartamento(departamento);
                 MessageBox.Show("Departamento adicionado com sucesso!");
                 LimparCampo();
             }

@@ -42,7 +42,7 @@
   </Table>
   <Table Name="dbo.DEPARTAMENTO" Member="DEPARTAMENTO">
     <Type Name="DEPARTAMENTO">
-      <Column Name="DepartamentoID" AccessModifier="Private" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepartamentoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="DepartamentoNome" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DAL.DAO.Departamento
 {
@@ -12,6 +14,7 @@ namespace DAL.DAO.Departamento
         /// </summary>
         public static void Gravar(DEPARTAMENTO departamento)
         {
+
             try
             {
                 // Insere a entidade no banco
@@ -24,10 +27,15 @@ namespace DAL.DAO.Departamento
             {
                 throw ex;
             }
-            finally
-            {
-                dataContext.Transaction.Commit();
-            }
+        }
+
+        /// <summary>
+        /// Método que obtem todos os departamentos
+        /// </summary>
+        public static List<DEPARTAMENTO> ObterTodos()
+        {
+            var departamentosBD = dataContext.DEPARTAMENTO.ToList();
+            return departamentosBD;
         }
     }
 }

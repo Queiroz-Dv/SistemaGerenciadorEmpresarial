@@ -916,7 +916,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DepartamentoID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		private int DepartamentoID
+		public int DepartamentoID
 		{
 			get
 			{

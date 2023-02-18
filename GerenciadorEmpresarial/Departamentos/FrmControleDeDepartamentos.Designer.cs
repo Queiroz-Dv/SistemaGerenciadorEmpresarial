@@ -123,6 +123,7 @@ namespace GerenciadorEmpresarial.Departamentos
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle De Departamentos";
+            this.Load += new System.EventHandler(this.FrmControleDeDepartamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDepartamentos)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
