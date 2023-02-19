@@ -8,12 +8,14 @@ namespace BLL.Interfaces
     {
         List<CargosDTO> ObterCargos();
 
-        CARGO GravarCargo(CARGO departamento);
+        CargosDTO ObterCargoPorId(int id);
 
-        CARGO AtualizarCargo(int id);
+        void GravarCargo(CARGO cargo);
 
-        CARGO DeletarCargo(int id);
+        void AtualizarCargo(int id);
 
-        CARGO DeletarCargos(CARGO departamentos);
+        void DeletarCargo(int id);
+
+        void DeletarCargos(CARGO cargos);
     }
 }

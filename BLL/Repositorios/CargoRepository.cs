@@ -8,25 +8,29 @@ namespace BLL.Repositorios
 {
     public class CargoRepository : ICargoRepository
     {
-        public CARGO AtualizarCargo(int id)
+        public void AtualizarCargo(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public CARGO DeletarCargo(int id)
+        public void DeletarCargo(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public CARGO DeletarCargos(CARGO cargos)
+        public void DeletarCargos(CARGO cargos)
         {
             throw new System.NotImplementedException();
         }
 
-        public CARGO GravarCargo(CARGO cargo)
+        public void GravarCargo(CARGO cargo)
         {
             CargosDAO.Gravar(cargo);
-            return cargo;
+        }
+
+        public CargosDTO ObterCargoPorId(int id)
+        {
+            throw new System.NotImplementedException();
         }
 
         public List<CargosDTO> ObterCargos()

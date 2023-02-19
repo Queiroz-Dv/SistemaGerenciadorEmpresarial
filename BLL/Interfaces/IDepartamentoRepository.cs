@@ -7,12 +7,12 @@ namespace BLL.Interfaces
     {
         List<DEPARTAMENTO> ObterDepartamentos();
 
-        DEPARTAMENTO GravarDepartamento(DEPARTAMENTO departamento);
+        void GravarDepartamento(DEPARTAMENTO departamento);
 
-        DEPARTAMENTO AtualizarDepartamento(int id);
+        void AtualizarDepartamento(int id);
 
-        DEPARTAMENTO DeletarDepartamento(int id);
+        void DeletarDepartamento(int id);
 
-        DEPARTAMENTO DeletarDepartamentos(DEPARTAMENTO departamentos);
+        void DeletarDepartamentos(DEPARTAMENTO departamentos);
     }
 }

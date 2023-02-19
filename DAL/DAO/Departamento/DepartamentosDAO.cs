@@ -9,9 +9,6 @@ namespace DAL.DAO.Departamento
     /// </summary>
     public class DepartamentosDAO : Contexto
     {
-        /// <summary>
-        /// Método que gravar a entidade no banco de dados
-        /// </summary>
         public static void Gravar(DEPARTAMENTO departamento)
         {
 
@@ -29,9 +26,6 @@ namespace DAL.DAO.Departamento
             }
         }
 
-        /// <summary>
-        /// Método que obtem todos os departamentos
-        /// </summary>
         public static List<DEPARTAMENTO> ObterTodos()
         {
             var departamentosBD = dataContext.DEPARTAMENTO.ToList();

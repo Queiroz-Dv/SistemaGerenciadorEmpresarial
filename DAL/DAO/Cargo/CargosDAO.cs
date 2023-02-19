@@ -54,7 +54,6 @@ namespace DAL.DAO.Cargo
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
