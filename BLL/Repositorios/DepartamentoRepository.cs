@@ -8,32 +8,23 @@ namespace BLL.Repositorios
 {
     public class DepartamentoRepository : IDepartamentoRepository
     {
-        public DEPARTAMENTO AtualizarDepartamento(int id)
+        public void AtualizarDepartamento(int id)
         {
             throw new NotImplementedException();
         }
 
-        public DEPARTAMENTO DeletarDepartamento(int id)
+        public void DeletarDepartamento(int id)
         {
             throw new NotImplementedException();
         }
 
-        public DEPARTAMENTO DeletarDepartamentos(DEPARTAMENTO departamentos)
+        public void DeletarDepartamentos(DEPARTAMENTO departamentos)
         {
             throw new NotImplementedException();
         }
 
-        public DEPARTAMENTO GravarDepartamento(DEPARTAMENTO departamento)
-        {
-            if (departamento != null)
-            {
-                DepartamentoDAO.Gravar(departamento); // Repassa o objeto para a camada de persistência
-                return departamento;
-            }
-            else
-                return departamento;
-        }
+        public void GravarDepartamento(DEPARTAMENTO departamento) => DepartamentosDAO.Gravar(departamento); // Repassa o objeto para a camada de persistência       
 
-        public List<DEPARTAMENTO> ObterDepartamentos() => DepartamentoDAO.ObterTodos();
+        public List<DEPARTAMENTO> ObterDepartamentos() => DepartamentosDAO.ObterTodos();
     }
 }

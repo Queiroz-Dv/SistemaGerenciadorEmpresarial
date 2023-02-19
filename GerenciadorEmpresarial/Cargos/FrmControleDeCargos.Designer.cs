@@ -30,7 +30,7 @@ namespace GerenciadorEmpresarial.Cargos
         private void InitializeComponent()
         {
             this.dgvCargos = new System.Windows.Forms.DataGridView();
-            this.btnGravar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDeletar = new System.Windows.Forms.Button();
@@ -52,17 +52,17 @@ namespace GerenciadorEmpresarial.Cargos
             this.dgvCargos.Size = new System.Drawing.Size(433, 309);
             this.dgvCargos.TabIndex = 4;
             // 
-            // btnGravar
+            // btnNovo
             // 
-            this.btnGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGravar.Location = new System.Drawing.Point(2, 2);
-            this.btnGravar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Size = new System.Drawing.Size(100, 38);
-            this.btnGravar.TabIndex = 0;
-            this.btnGravar.Text = "Gravar";
-            this.btnGravar.UseVisualStyleBackColor = true;
-            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(2, 2);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(100, 38);
+            this.btnNovo.TabIndex = 0;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnAtualizar
             // 
@@ -78,7 +78,7 @@ namespace GerenciadorEmpresarial.Cargos
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btnGravar);
+            this.flowLayoutPanel1.Controls.Add(this.btnNovo);
             this.flowLayoutPanel1.Controls.Add(this.btnAtualizar);
             this.flowLayoutPanel1.Controls.Add(this.btnDeletar);
             this.flowLayoutPanel1.Controls.Add(this.btnVoltar);
@@ -123,6 +123,7 @@ namespace GerenciadorEmpresarial.Cargos
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle De Cargos";
+            this.Load += new System.EventHandler(this.FrmControleDeCargos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCargos)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -132,7 +133,7 @@ namespace GerenciadorEmpresarial.Cargos
         #endregion
 
         private System.Windows.Forms.DataGridView dgvCargos;
-        private System.Windows.Forms.Button btnGravar;
+        private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnDeletar;
