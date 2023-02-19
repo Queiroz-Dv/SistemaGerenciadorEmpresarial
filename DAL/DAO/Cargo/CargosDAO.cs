@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace DAL.DAO.Cargo
 {
+    /// <summary>
+    /// Classe responsável pelo acesso ao banco de dados do módulo Cargos
+    /// </summary>
     public class CargosDAO : Contexto
     {
         public static void Gravar(CARGO cargo)
