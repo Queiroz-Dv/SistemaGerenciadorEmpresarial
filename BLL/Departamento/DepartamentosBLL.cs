@@ -2,6 +2,8 @@
 
 namespace BLL.Departamento
 {
-    public class DepartamentosBLL : DepartamentoRepository
-    { }
+    public class DepartamentosBLL /*: DepartamentoRepository*/
+    {
+        
+    }
 }

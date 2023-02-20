@@ -1,5 +1,5 @@
 ﻿using BLL.Departamento;
-using BLL.Validacoes;
+using BLL.ValidacoesGenericas;
 using DAL;
 using System;
 using System.Windows.Forms;
@@ -37,7 +37,7 @@ namespace GerenciadorEmpresarial.Departamentos
 
                 // Repassa para a camada de negócio tratar e gravar
                 new DepartamentosBLL().GravarDepartamento(departamento);
-                MessageBox.Show("Departamento adicionado com sucesso!");
+                MessageBox.Show($"Departamento de {txtDepartamento.Text} adicionado com sucesso!");
                 LimparCampo();
             }
         }

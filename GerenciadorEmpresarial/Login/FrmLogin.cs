@@ -1,4 +1,4 @@
-﻿using BLL.Validacoes;
+﻿using BLL.ValidacoesGenericas;
 using GerenciadorEmpresarial.Menu;
 using System.Windows.Forms;
 
