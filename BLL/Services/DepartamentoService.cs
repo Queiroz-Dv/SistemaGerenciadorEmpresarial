@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BLL.Services
 {
-    public class DepartamentoService : IDepartamentoService
+    public class DepartamentoService /*: IDepartamentoService*/
     {
     }
 }

@@ -38,11 +38,11 @@ namespace DAL.DAO.Cargo
                                                   departamentos.DepartamentoNome
                                               }).OrderBy(order => order.CargoID).ToList();
                 // Lista para preencher
-                List<CargosDTO> cargosDTOsList = new List<CargosDTO>();
+                List<CargosDTO> cargosDTOsLista = new List<CargosDTO>();
                 foreach (var item in cargosComDepartamentos)
                 {
                     // Preenchimento da lista
-                    cargosDTOsList.Add(new CargosDTO
+                    cargosDTOsLista.Add(new CargosDTO
                     {
                         CargoID = item.CargoID,
                         CargoNome = item.CargoNome,
@@ -50,7 +50,7 @@ namespace DAL.DAO.Cargo
                         DepartamentoNome = item.DepartamentoNome
                     });
                 }
-                return cargosDTOsList;
+                return cargosDTOsLista;
             }
             catch (Exception ex)
             {

@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[TAREFASESTADO] (
+    [TarefasEstadoID]   INT          IDENTITY (1, 1) NOT NULL,
+    [TarefasEstadoNome] VARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_TAREFASESTADO] PRIMARY KEY CLUSTERED ([TarefasEstadoID] ASC)
+);

@@ -3,22 +3,14 @@ using System.Windows.Forms;
 
 namespace BLL.ValidacoesGenericas
 {
-    public class ValidateBase : IValidacao
+    public class ValidateBase  
     {
-        public bool Quando(bool temErro, object objeto)
+        public static bool Quando(bool temErro)
         {
-            if ()
-            {
-                var mensagens = InserirMensagem(objeto);
+            if (temErro)
                 return true;
-            }
             else
                 return false;
-        }
-
-        public DialogResult InserirMensagem(object objeto)
-        {
-            DialogResult resultado = MessageBox.Show("");
         }
     }
 }
