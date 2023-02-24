@@ -1,5 +1,5 @@
 ﻿using BLL.Cargo;
-using DAL.DTO.Cargo;
+using DAL.Models.Cargo;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;

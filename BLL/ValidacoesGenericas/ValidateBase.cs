@@ -1,9 +1,6 @@
-﻿using BLL.Interfaces;
-using System.Windows.Forms;
-
-namespace BLL.ValidacoesGenericas
+﻿namespace BLL.ValidacoesGenericas
 {
-    public class ValidateBase  
+    public class ValidateBase
     {
         public static bool Quando(bool temErro)
         {

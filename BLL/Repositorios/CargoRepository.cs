@@ -1,13 +1,12 @@
 ﻿using BLL.Interfaces;
-using DAL;
 using DAL.DAO.Cargo;
-using DAL.DTO.Cargo;
 using System.Collections.Generic;
 
 namespace BLL.Repositorios
 {
     public class CargoRepository : ICargoRepository
     {
+        private ICargoDAO
         public void AtualizarCargo(int id)
         {
             throw new System.NotImplementedException();
@@ -23,9 +22,12 @@ namespace BLL.Repositorios
             throw new System.NotImplementedException();
         }
 
-        public void GravarCargo(CARGO cargo)
+        public void GravarCargo(DAL.Models.Cargo cargo)
         {
-            CargosDAO.Gravar(cargo);
+            if (cargo != null)
+            {
+                CargosDAO.Gravar(cargo);
+            }
         }
 
         public CargosDTO ObterCargoPorId(int id)

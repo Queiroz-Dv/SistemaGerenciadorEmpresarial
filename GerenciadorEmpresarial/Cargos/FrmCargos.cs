@@ -1,7 +1,7 @@
 ﻿using BLL.Cargo;
 using BLL.Departamento;
 using BLL.ValidacoesGenericas;
-using DAL;
+using DAL.Models;
 using System;
 using System.Windows.Forms;
 
@@ -48,7 +48,7 @@ namespace GerenciadorEmpresarial.Cargos
             }
             else
             {
-                var cargo = new CARGO()
+                var cargo = new Cargo()
                 {
                     CargoNome = txtCargo.Text,
                     DepartamentoID = Convert.ToInt32(cmbDepartamentos.SelectedValue)
