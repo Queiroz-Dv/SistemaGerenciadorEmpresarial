@@ -1,10 +1,10 @@
-﻿using BLL.Interfaces;
+﻿using DAL.Interfaces;
 using DAL;
 using DAL.DAO.Departamento;
 using System;
 using System.Collections.Generic;
 
-namespace BLL.Repositorios
+namespace DAL.Repositorios
 {
     public class DepartamentoRepository : IDepartamentoRepository
     {

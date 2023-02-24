@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace BLL.ValidacoesGenericas
+namespace DAL.ValidacoesGenericas
 {
     public class VerificarDigito
     {

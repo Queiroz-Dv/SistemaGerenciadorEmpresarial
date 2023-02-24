@@ -1,4 +1,4 @@
-﻿using BLL.Departamento;
+﻿using DAL.Departamento;
 using System;
 using System.Windows.Forms;
 

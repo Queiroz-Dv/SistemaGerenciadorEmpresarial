@@ -1,8 +1,8 @@
-﻿using BLL.Interfaces;
+﻿using DAL.Interfaces;
 using DAL.DAO.Cargo;
 using System.Collections.Generic;
 
-namespace BLL.Repositorios
+namespace DAL.Repositorios
 {
     public class CargoRepository : ICargoRepository
     {

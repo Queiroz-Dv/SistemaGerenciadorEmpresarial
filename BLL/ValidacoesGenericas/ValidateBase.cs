@@ -1,4 +1,4 @@
-﻿namespace BLL.ValidacoesGenericas
+﻿namespace DAL.ValidacoesGenericas
 {
     public class ValidateBase
     {

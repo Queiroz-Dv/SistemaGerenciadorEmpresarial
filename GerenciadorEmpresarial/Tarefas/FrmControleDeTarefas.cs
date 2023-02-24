@@ -1,4 +1,4 @@
-﻿using BLL.ValidacoesGenericas;
+﻿using DAL.ValidacoesGenericas;
 using System;
 using System.Windows.Forms;
 

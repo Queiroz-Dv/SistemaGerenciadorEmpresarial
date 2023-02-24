@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace BLL.Interfaces
+namespace DAL.Interfaces
 {
     interface IValidacao
     {

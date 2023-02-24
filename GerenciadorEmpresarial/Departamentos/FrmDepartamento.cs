@@ -1,5 +1,5 @@
-﻿using BLL.Departamento;
-using BLL.ValidacoesGenericas;
+﻿using DAL.Departamento;
+using DAL.ValidacoesGenericas;
 using DAL;
 using System;
 using System.Windows.Forms;

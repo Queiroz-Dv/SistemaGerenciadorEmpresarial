@@ -1,6 +1,6 @@
-﻿using BLL.Cargo;
-using BLL.Departamento;
-using BLL.ValidacoesGenericas;
+﻿using DAL.Cargo;
+using DAL.Departamento;
+using DAL.ValidacoesGenericas;
 using DAL.Models;
 using System;
 using System.Windows.Forms;

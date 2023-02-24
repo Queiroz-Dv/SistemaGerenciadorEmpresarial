@@ -1,4 +1,4 @@
-﻿using BLL.Cargo;
+﻿using DAL.Cargo;
 using DAL.Models.Cargo;
 using System;
 using System.Collections.Generic;

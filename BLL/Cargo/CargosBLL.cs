@@ -1,7 +1,7 @@
-﻿using BLL.Interfaces;
-using BLL.Repositorios;
+﻿using DAL.Interfaces;
+using DAL.Repositorios;
 
-namespace BLL.Cargo
+namespace DAL.Cargo
 {
     public class CargosBLL : ICargosBLL
     {

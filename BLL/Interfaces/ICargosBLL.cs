@@ -1,4 +1,4 @@
-﻿namespace BLL.Interfaces
+﻿namespace DAL.Interfaces
 {
     public interface ICargosBLL
     {

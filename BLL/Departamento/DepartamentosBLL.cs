@@ -1,6 +1,6 @@
-﻿using BLL.Repositorios;
+﻿using DAL.Repositorios;
 
-namespace BLL.Departamento
+namespace DAL.Departamento
 {
     public class DepartamentosBLL : DepartamentoRepository
     {

@@ -1,4 +1,4 @@
-﻿using DAL;
+﻿using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Services.InterfaceServices
 {
-    public interface IDepartamentoService
+    public interface ICargoService
     {
-        bool ValidarDepartamento(DEPARTAMENTO departamento);
 
+        bool ValidarId(IGenericRepository<Cargo> )
     }
 }

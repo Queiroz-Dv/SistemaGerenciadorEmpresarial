@@ -1,6 +1,6 @@
 ﻿using APP.DTO;
 using APP.Interfaces;
-using BLL.Interfaces;
+using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 
