@@ -1,30 +1,30 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
-    public class Cargo
+    public class Cargo : Entity
     {
-        protected Cargo()
-        {
+        protected Cargo() { }
 
-        }
-
-        public Cargo(string cargoNome)
-        {
-            ValidateDomain
-        }
-
-        public Cargo(int cargoId, string cargoNome)
+        public Cargo(Guid cargoId, string cargoNome)
         {
             CargoId = cargoId;
             CargoNome = cargoNome;
+            Validate();
         }
 
-        public int CargoId { get; set; }
+        public sealed override void Validate()
+        {
+            IsInvalidId(CargoId, InvalidId);
+            IsInvalidName(CargoNome, InvalidName);
+        }
+
+        public Guid CargoId { get; set; }
 
         public string CargoNome { get; set; }
 
-        public int DepartamentoID { get; set; }
+        public Guid DepartamentoID { get; set; }
 
         public virtual ICollection<Departamento> Departamentos { get; set; }
     }

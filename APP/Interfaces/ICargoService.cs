@@ -1,7 +1,7 @@
-﻿using APP.DTO;
+﻿using Application.DTO;
 using System.Collections.Generic;
 
-namespace APP.Interfaces
+namespace Application.Interfaces
 {
     public interface ICargoService
     {

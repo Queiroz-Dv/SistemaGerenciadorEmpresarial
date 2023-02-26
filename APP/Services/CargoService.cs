@@ -1,10 +1,10 @@
-﻿using APP.DTO;
-using APP.Interfaces;
+﻿using Application.DTO;
+using Application.Interfaces;
 using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 
-namespace APP.Services
+namespace Application.Services
 {
     public class CargoService : ICargoService
     {

@@ -1,8 +1,25 @@
-﻿namespace Domain.Entities
+﻿using System;
+
+namespace Domain.Entities
 {
-    public class Departamento
+    public class Departamento : Entity
     {
-        public int DepartamentoId { get; set; }
+        protected Departamento() { }
+
+        public Departamento(Guid departamentoGuid, string departamentoNome)
+        {
+            DepartamentoId = departamentoGuid;
+            DepartamentoNome = departamentoNome;
+            Validate();
+        }
+
+        public sealed override void Validate()
+        {
+            IsInvalidId(DepartamentoId, InvalidId);
+            IsInvalidName(DepartamentoNome, InvalidName);
+        }
+
+        public Guid DepartamentoId { get; set; }
 
         public string DepartamentoNome { get; set; }
 
